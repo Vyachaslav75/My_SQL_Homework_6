@@ -25,7 +25,7 @@ BEGIN
     END IF;
     IF  tmp > 0 THEN
       SET res = CONCAT( tmp, ' ', 'days', res );
-	  END IF;
+    END IF;
   ELSE
     SET res = 'неверное значение';
   END IF;
@@ -48,7 +48,7 @@ BEGIN
     WHILE i <= num DO
       INSERT INTO temp (even) VALUES (i);
       SET i = i + 2;
-	  END WHILE;
+    END WHILE;
   ELSE
     SELECT 'Неверное значение';
   END IF;
